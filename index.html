@@ -1,38 +1,61 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Harmony Piano School</title>
 
-  <link rel="stylesheet" href="style.css" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    中村ピアノ教室｜初心者歓迎・無料体験レッスン受付中
+  </title>
+
+  <meta
+    name="description"
+    content="中村ピアノ教室では、子どもから大人まで幅広い年代へ丁寧なピアノレッスンを行っています。初心者歓迎・無料体験レッスン受付中。"
+  >
+
+  <link rel="stylesheet" href="style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap"
+    rel="stylesheet"
+  >
+
 </head>
 
 <body>
 
   <!-- ヘッダー -->
   <header>
+
     <div class="container header-inner">
-      <h1>Harmony Piano School</h1>
+
+      <h1>中村ピアノ教室</h1>
 
       <nav>
+
         <ul>
           <li><a href="#about">教室紹介</a></li>
           <li><a href="#teacher">講師紹介</a></li>
-          <li><a href="#price">料金</a></li>
+          <li><a href="#price">料金表</a></li>
           <li><a href="#contact">お問い合わせ</a></li>
         </ul>
+
       </nav>
+
     </div>
+
   </header>
 
-  <!-- メインビジュアル -->
+  <!-- メイン -->
   <section class="hero">
+
     <div class="hero-text">
+
       <h2>音楽をもっと身近に。</h2>
+
       <p>
         初心者から経験者まで、<br>
         一人ひとりに合わせたレッスンをご提供します。
@@ -41,60 +64,81 @@
       <a href="#contact" class="btn">
         無料体験レッスン受付中
       </a>
+
     </div>
+
   </section>
 
   <!-- 教室紹介 -->
   <section id="about" class="section">
+
     <div class="container">
-      <h2 class="section-title">教室紹介</h2>
+
+      <h2 class="section-title">
+        教室紹介
+      </h2>
 
       <p class="section-text">
-        Harmony Piano Schoolでは、
+        中村ピアノ教室では、
         子どもから大人まで幅広い世代の方へ
         丁寧なピアノレッスンを行っています。
 
         音楽を楽しみながら、
         基礎からしっかり学べる教室です。
       </p>
+
     </div>
+
   </section>
 
   <!-- 講師紹介 -->
   <section id="teacher" class="section beige">
+
     <div class="container">
-      <h2 class="section-title">講師紹介</h2>
+
+      <h2 class="section-title">
+        講師紹介
+      </h2>
 
       <div class="teacher-card">
 
         <img
-          src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=800"
+          src="teacher.jpg"
           alt="講師写真"
         >
 
         <div class="teacher-text">
-          <h3>山田 花子</h3>
+
+          <h3>中村先生</h3>
 
           <p>
-            音楽大学ピアノ科卒業。<br>
-            これまで多数の生徒を指導し、
-            初心者指導を得意としています。
+            現在は子どもから大人まで
+            幅広い年代へ指導を行っています。
 
-            「楽しく続けられるレッスン」を
-            大切にしています。
+            「楽しく続けられるレッスン」を大切にし、
+            一人ひとりに寄り添った
+            丁寧な指導を心掛けています。
           </p>
+
         </div>
 
       </div>
+
     </div>
+
   </section>
 
   <!-- 料金 -->
   <section id="price" class="section">
+
     <div class="container">
-      <h2 class="section-title">料金表</h2>
+
+      <h2 class="section-title">
+        料金表
+      </h2>
 
       <table>
+
         <tr>
           <th>コース</th>
           <th>月額</th>
@@ -114,30 +158,49 @@
           <td>上級コース（60分）</td>
           <td>12,000円</td>
         </tr>
+
       </table>
+
     </div>
+
   </section>
 
   <!-- お問い合わせ -->
   <section id="contact" class="section beige">
-    <div class="container">
-      <h2 class="section-title">お問い合わせ</h2>
 
-      <form id="contact-form">
+    <div class="container">
+
+      <h2 class="section-title">
+        お問い合わせ
+      </h2>
+
+      <form
+        action="https://formspree.io/f/xgoqndev"
+        method="POST"
+      >
+
+        <input
+          type="hidden"
+          name="_next"
+          value="https://あなたのVercelURL/thanks.html"
+        >
 
         <input
           type="text"
+          name="name"
           placeholder="お名前"
           required
         >
 
         <input
           type="email"
+          name="email"
           placeholder="メールアドレス"
           required
         >
 
         <textarea
+          name="message"
           placeholder="お問い合わせ内容"
           required
         ></textarea>
@@ -148,17 +211,14 @@
 
       </form>
 
-      <p id="message"></p>
-
     </div>
+
   </section>
 
   <!-- フッター -->
   <footer>
-    <p>© 2026 Harmony Piano School</p>
+    <p>© 2026 中村ピアノ教室</p>
   </footer>
-
-  <script src="script.js"></script>
 
 </body>
 </html>
