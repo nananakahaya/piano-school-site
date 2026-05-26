@@ -1,224 +1,203 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>
-    中村ピアノ教室｜初心者歓迎・無料体験レッスン受付中
-  </title>
+  <title>中村ピアノ教室｜初心者歓迎・無料体験レッスン受付中</title>
 
   <meta
     name="description"
-    content="中村ピアノ教室では、子どもから大人まで幅広い年代へ丁寧なピアノレッスンを行っています。初心者歓迎・無料体験レッスン受付中。"
+    content="中村ピアノ教室では、子どもから大人まで幅広い年代へ丁寧なピアノレッスンを行っています。無料体験レッスン受付中。"
   >
 
   <link rel="stylesheet" href="style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap"
     rel="stylesheet"
   >
-
 </head>
 
 <body>
 
-  <!-- ヘッダー -->
-  <header>
+<header>
+  <div class="container header-inner">
+    <h1>中村ピアノ教室</h1>
 
-    <div class="container header-inner">
+    <nav>
+      <ul>
+        <li><a href="#about">教室紹介</a></li>
+        <li><a href="#teacher">講師紹介</a></li>
+        <li><a href="#price">料金</a></li>
+        <li><a href="#access">アクセス</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
 
-      <h1>中村ピアノ教室</h1>
+    <a href="#contact" class="header-btn">
+      体験レッスンはこちら
+    </a>
+  </div>
+</header>
 
-      <nav>
+<section class="hero">
+  <div class="hero-text fade-in">
+    <p class="hero-sub">Nakamura Piano School</p>
 
-        <ul>
-          <li><a href="#about">教室紹介</a></li>
-          <li><a href="#teacher">講師紹介</a></li>
-          <li><a href="#price">料金表</a></li>
-          <li><a href="#contact">お問い合わせ</a></li>
-        </ul>
+    <h2>
+      音楽を楽しみながら、<br>
+      心豊かに成長できる場所。
+    </h2>
 
-      </nav>
+    <p>
+      子どもから大人まで、初心者の方も安心して通える<br>
+      あたたかい雰囲気のピアノ教室です。
+    </p>
 
-    </div>
-
-  </header>
-
-  <!-- メイン -->
-  <section class="hero">
-
-    <div class="hero-text">
-
-      <h2>音楽をもっと身近に。</h2>
-
-      <p>
-        初心者から経験者まで、<br>
-        一人ひとりに合わせたレッスンをご提供します。
-      </p>
-
+    <div class="hero-buttons">
       <a href="#contact" class="btn">
         無料体験レッスン受付中
       </a>
 
+      <a href="#teacher" class="btn-outline">
+        講師紹介を見る
+      </a>
     </div>
+  </div>
+</section>
 
-  </section>
+<section id="about" class="section fade-in">
+  <div class="container">
+    <h2 class="section-title">教室紹介</h2>
 
-  <!-- 教室紹介 -->
-  <section id="about" class="section">
+    <p class="section-text">
+      中村ピアノ教室では、子どもから大人まで幅広い世代の方へ
+      丁寧なピアノレッスンを行っています。
+      音楽を楽しみながら、基礎からしっかり学べる教室です。
+    </p>
+  </div>
+</section>
 
-    <div class="container">
+<section id="teacher" class="section beige fade-in">
+  <div class="container">
+    <h2 class="section-title">講師紹介</h2>
 
-      <h2 class="section-title">
-        教室紹介
-      </h2>
-
-      <p class="section-text">
-        中村ピアノ教室では、
-        子どもから大人まで幅広い世代の方へ
-        丁寧なピアノレッスンを行っています。
-
-        音楽を楽しみながら、
-        基礎からしっかり学べる教室です。
-      </p>
-
-    </div>
-
-  </section>
-
-  <!-- 講師紹介 -->
-  <section id="teacher" class="section beige">
-
-    <div class="container">
-
-      <h2 class="section-title">
-        講師紹介
-      </h2>
-
-      <div class="teacher-card">
-
-        <img
-          src="teacher.jpg"
-          alt="講師写真"
-        >
-
-        <div class="teacher-text">
-
-          <h3>中村先生</h3>
-
-          <p>
-            現在は子どもから大人まで
-            幅広い年代へ指導を行っています。
-
-            「楽しく続けられるレッスン」を大切にし、
-            一人ひとりに寄り添った
-            丁寧な指導を心掛けています。
-          </p>
-
-        </div>
-
+    <div class="teacher-card">
+      <div class="teacher-image">
+        <img src="teacher.jpg" alt="中村ピアノ教室の講師写真">
       </div>
 
+      <div class="teacher-text">
+        <p class="label">Teacher</p>
+
+        <h3>中村先生</h3>
+
+        <p>
+          現在は子どもから大人まで幅広い年代へ指導を行っています。
+          「楽しく続けられるレッスン」を大切にし、
+          一人ひとりに寄り添った丁寧な指導を心掛けています。
+        </p>
+      </div>
     </div>
+  </div>
+</section>
 
-  </section>
+<section id="price" class="section fade-in">
+  <div class="container">
+    <h2 class="section-title">料金表</h2>
 
-  <!-- 料金 -->
-  <section id="price" class="section">
+    <div class="price-cards">
+      <div class="price-card">
+        <h3>子どもコース</h3>
+        <p class="time">30分レッスン</p>
+        <p class="price">月額 7,000円</p>
+      </div>
 
-    <div class="container">
+      <div class="price-card recommend">
+        <p class="badge">おすすめ</p>
+        <h3>一般コース</h3>
+        <p class="time">45分レッスン</p>
+        <p class="price">月額 9,000円</p>
+      </div>
 
-      <h2 class="section-title">
-        料金表
-      </h2>
-
-      <table>
-
-        <tr>
-          <th>コース</th>
-          <th>月額</th>
-        </tr>
-
-        <tr>
-          <td>子どもコース（30分）</td>
-          <td>7,000円</td>
-        </tr>
-
-        <tr>
-          <td>一般コース（45分）</td>
-          <td>9,000円</td>
-        </tr>
-
-        <tr>
-          <td>上級コース（60分）</td>
-          <td>12,000円</td>
-        </tr>
-
-      </table>
-
+      <div class="price-card">
+        <h3>上級コース</h3>
+        <p class="time">60分レッスン</p>
+        <p class="price">月額 12,000円</p>
+      </div>
     </div>
+  </div>
+</section>
 
-  </section>
+<section id="access" class="section beige fade-in">
+  <div class="container">
+    <h2 class="section-title">アクセス</h2>
 
-  <!-- お問い合わせ -->
-  <section id="contact" class="section beige">
+    <p class="section-text">
+      教室の場所はこちらからご確認いただけます。
+    </p>
 
-    <div class="container">
+    <div class="map-box">
+      <iframe
+        src="https://www.google.com/maps?q=中村ピアノ教室&output=embed"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
 
-      <h2 class="section-title">
-        お問い合わせ
-      </h2>
+<section id="contact" class="section fade-in">
+  <div class="container">
+    <h2 class="section-title">お問い合わせ</h2>
 
-      <form
-        action="https://formspree.io/f/xgoqndev"
-        method="POST"
+    <p class="section-text contact-lead">
+      無料体験レッスン受付中です。お気軽にお問い合わせください。
+    </p>
+
+    <form
+      action="https://formspree.io/f/xgoqndev"
+      method="POST"
+    >
+      <input
+        type="hidden"
+        name="_next"
+        value="https://あなたのVercelURL/thanks.html"
       >
 
-        <input
-          type="hidden"
-          name="_next"
-          value="https://あなたのVercelURL/thanks.html"
-        >
+      <input
+        type="text"
+        name="name"
+        placeholder="お名前"
+        required
+      >
 
-        <input
-          type="text"
-          name="name"
-          placeholder="お名前"
-          required
-        >
+      <input
+        type="email"
+        name="email"
+        placeholder="メールアドレス"
+        required
+      >
 
-        <input
-          type="email"
-          name="email"
-          placeholder="メールアドレス"
-          required
-        >
+      <textarea
+        name="message"
+        placeholder="お問い合わせ内容"
+        required
+      ></textarea>
 
-        <textarea
-          name="message"
-          placeholder="お問い合わせ内容"
-          required
-        ></textarea>
+      <button type="submit">
+        送信する
+      </button>
+    </form>
+  </div>
+</section>
 
-        <button type="submit">
-          送信する
-        </button>
+<footer>
+  <p>© 2026 中村ピアノ教室</p>
+</footer>
 
-      </form>
-
-    </div>
-
-  </section>
-
-  <!-- フッター -->
-  <footer>
-    <p>© 2026 中村ピアノ教室</p>
-  </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
